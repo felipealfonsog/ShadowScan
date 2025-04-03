@@ -1,6 +1,6 @@
 ## ShadowScan
 
-## Overview
+### Overview
 ShadowScan is a security tool designed to scan files and system configurations for hidden backdoors, malicious scripts, and reverse shells on Linux and macOS.
 
 ShadowScan is an open-source cybersecurity tool built for penetration testers, system administrators, and security researchers.
