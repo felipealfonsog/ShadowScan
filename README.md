@@ -1,2 +1,2 @@
-# BackdoorScanner
-BackdoorScanner is a CLI tool for detecting hidden backdoors, malicious scripts, and suspicious shell commands in system files.
+# ShadowScan
+ShadowScan is a security tool designed to scan files and system configurations for hidden backdoors, malicious scripts, and reverse shells on Linux and macOS.
