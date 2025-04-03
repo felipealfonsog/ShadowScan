@@ -1,13 +1,13 @@
 ## ShadowScan
 
-### Overview
+#### Overview
 ShadowScan is a security tool designed to scan files and system configurations for hidden backdoors, malicious scripts, and reverse shells on Linux and macOS.
 
 ShadowScan is an open-source cybersecurity tool built for penetration testers, system administrators, and security researchers.
 It performs a deep scan of system files, looking for patterns commonly used in backdoors, malware, and reverse shells.
 The tool is optimized for Linux distributions (Arch, Debian, Ubuntu, Fedora, etc.) and macOS, making it a lightweight but powerful security solution.
 
-### Main Features:
+#### Main Features:
 
     ✔ Detects hidden backdoors in shell scripts (.bashrc, .bash_profile, cron jobs).
     ✔ Scans for reverse shells, common obfuscation techniques, and suspicious commands (nc -e, python -c 'import pty').
@@ -17,8 +17,8 @@ The tool is optimized for Linux distributions (Arch, Debian, Ubuntu, Fedora, etc
 
 #
 
-# Execution Instructions
-## Installation
+#### Execution Instructions
+#### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/ShadowScan.git
@@ -29,18 +29,18 @@ The tool is optimized for Linux distributions (Arch, Debian, Ubuntu, Fedora, etc
    pip install -r requirements.txt
    ```
 
-## Usage
-### Basic Scan
+#### Usage
+#### Basic Scan
 ```bash
 python src/shadowscan.py --scan /path/to/directory
 ```
 
-### Scan with VirusTotal
+#### Scan with VirusTotal
 ```bash
 python src/shadowscan.py --scan /path/to/directory --virustotal YOUR_API_KEY
 ```
 
-### Generate a Report
+#### Generate a Report
 ```bash
 python src/shadowscan.py --scan /path/to/directory --report output.json
 ```
@@ -48,12 +48,12 @@ python src/shadowscan.py --scan /path/to/directory --report output.json
 #
 
 
-## Contribution
+#### Contribution
 1. Fork the repository.
 2. Create a new branch.
 3. Commit your changes.
 4. Submit a pull request.
 
-## License
+#### License
 ShadowScan is licensed under the BSD 3-clause
 
