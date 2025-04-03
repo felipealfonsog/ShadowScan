@@ -1,26 +1,26 @@
-import sys
-import os
-
-# Add the src directory to sys.path for module imports
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-
 import argparse
 from scanner import scan_directory
-from report import generate_report  # This will now look for the report.py file in the src folder
+from report import generate_report
 
 def main():
-    parser = argparse.ArgumentParser(description="ShadowScan - Detect hidden backdoors and malicious scripts.")
-    parser.add_argument("--scan", required=True, help="Directory to scan")
-    parser.add_argument("--report", help="Save report to a JSON file")
-    parser.add_argument("--virustotal", help="VirusTotal API key for binary analysis")
-    
+    parser = argparse.ArgumentParser(description="ShadowScan - File scanner for suspicious patterns")
+    parser.add_argument("--scan", help="Directory to scan", required=True)
+    parser.add_argument("--report", help="Save results to a report file", action="store_true")
     args = parser.parse_args()
-    scan_results = scan_directory(args.scan, args.virustotal)
-    
-    if args.report:
-        generate_report(scan_results, args.report)
+
+    scan_results = scan_directory(args.scan)
+
+    if scan_results:
+        print("\n🔍 Scan Results:")
+        for result in scan_results:
+            print(f"\nFile: {result['file']}")
+            print(f"Matches: {', '.join(result['matches'])}")
     else:
-        print(scan_results)
+        print("✅ No suspicious matches found.")
+
+    # Save report if requested
+    if args.report:
+        generate_report(scan_results)
 
 if __name__ == "__main__":
     main()
