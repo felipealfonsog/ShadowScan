@@ -17,17 +17,17 @@ The tool is optimized for Linux distributions (Arch, Debian, Ubuntu, Fedora, etc
 
 #
 
+# Execution Instructions
 ## Installation
-### Requirements
-- Python 3.8+
-- Dependencies listed in `requirements.txt`
-
-### Setup
-```bash
-git clone https://github.com/yourusername/ShadowScan.git
-cd ShadowScan
-pip install -r requirements.txt
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ShadowScan.git
+   cd ShadowScan
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 ### Basic Scan
@@ -44,6 +44,9 @@ python src/shadowscan.py --scan /path/to/directory --virustotal YOUR_API_KEY
 ```bash
 python src/shadowscan.py --scan /path/to/directory --report output.json
 ```
+
+#
+
 
 ## Contribution
 1. Fork the repository.
