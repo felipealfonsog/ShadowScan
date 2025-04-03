@@ -1,8 +1,11 @@
 {
-    "suspicious_keywords": [
+    "suspicious_patterns": [
         "malware",
-        "backdoor",
         "trojan",
-        "spyware"
+        "virus",
+        "ransomware",
+        "hacktool",
+        "exploit",
+        "backdoor"
     ]
 }
