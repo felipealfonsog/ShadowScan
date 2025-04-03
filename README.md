@@ -8,11 +8,12 @@ It performs a deep scan of system files, looking for patterns commonly used in b
 The tool is optimized for Linux distributions (Arch, Debian, Ubuntu, Fedora, etc.) and macOS, making it a lightweight but powerful security solution.
 
 ### Main Features:
-✔ Detects hidden backdoors in shell scripts (.bashrc, .bash_profile, cron jobs).
-✔ Scans for reverse shells, common obfuscation techniques, and suspicious commands (nc -e, python -c 'import pty').
-✔ Integrates with VirusTotal and other threat intelligence APIs for checking unknown binaries.
-✔ Identifies unauthorized SSH keys and altered system configurations.
-✔ Creates a detailed security report highlighting the most critical findings.
+
+    ✔ Detects hidden backdoors in shell scripts (.bashrc, .bash_profile, cron jobs).
+    ✔ Scans for reverse shells, common obfuscation techniques, and suspicious commands (nc -e, python -c 'import pty').
+    ✔ Integrates with VirusTotal and other threat intelligence APIs for checking unknown binaries.
+    ✔ Identifies unauthorized SSH keys and altered system configurations.
+    ✔ Creates a detailed security report highlighting the most critical findings.
 
 #
 
