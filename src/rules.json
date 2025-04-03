@@ -1,0 +1,6 @@
+# rules.json
+[
+    {"pattern": "nc -e", "description": "Potential reverse shell using netcat"},
+    {"pattern": "bash -i", "description": "Bash interactive shell - possible backdoor"},
+    {"pattern": "import pty", "description": "Python reverse shell detected"}
+]
