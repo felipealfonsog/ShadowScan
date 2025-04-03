@@ -1,14 +1,14 @@
-# utils.py
 import json
 
 def load_rules():
-    with open("rules.json", "r") as f:
-        return json.load(f)
+    with open('rules.json', 'r') as f:
+        rules = json.load(f)
+    return rules
 
 def detect_suspicious_patterns(content):
     rules = load_rules()
-    matches = []
-    for rule in rules:
-        if rule["pattern"] in content:
-            matches.append(rule)
-    return matches
+    suspicious_patterns = []
+    for rule in rules['suspicious_keywords']:
+        if rule in content:
+            suspicious_patterns.append(rule)
+    return suspicious_patterns

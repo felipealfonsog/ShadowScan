@@ -1,8 +1,12 @@
-# shadowscan.py
-import argparse
+import sys
 import os
+
+# Add the src directory to sys.path for module imports
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+import argparse
 from scanner import scan_directory
-from report import generate_report
+from report import generate_report  # This will now look for the report.py file in the src folder
 
 def main():
     parser = argparse.ArgumentParser(description="ShadowScan - Detect hidden backdoors and malicious scripts.")
